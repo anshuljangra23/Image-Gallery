@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery-item {
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    width: calc(20% - 10px); /* 5 images per row */
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(33.33% - 10px); /* 3 images per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: calc(50% - 10px); /* 2 images per row */
+    }
+}
+</style>
+</head>
+<body>
+<div class="gallery">
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Faesthetic-nature&psig=AOvVaw3K5qaEevIK4DVPi0vXcB4v&ust=1740577907702000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiQ-Jj83osDFQAAAAAdAAAAABAI">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/715/778/non_2x/sunset-meadow-wildflowers-bloom-in-nature-beauty-generated-by-ai-free-photo.jpg" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.briantracy.com%2Fblog%2Fpersonal-success%2Finspirational-quotes%2F&psig=AOvVaw2AwogDxstBNKIlIJPVJKVG&ust=1740578317493000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNixptj93osDFQAAAAAdAAAAABAE">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFl1aKAEom5D4KLkn9OYK0ZCES8HxA7dZcrg&s" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fotor.com%2Fblog%2Fhow-to-take-professional-photos%2F&psig=AOvVaw1Q8I2rWfvIIs2v9pjwy6wC&ust=1740577456454000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDZw_r63osDFQAAAAAdAAAAABAJ">
+        <img src="https://imgv3.fotor.com/images/blog-cover-image/a-shadow-of-a-boy-carrying-the-camera-with-red-sky-behind.jpg">
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fshri-krishna--92605336080792705%2F&psig=AOvVaw0HiyVzVboywrAvgveVkdhh&ust=1740578073892000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCW7eP83osDFQAAAAAdAAAAABAc">
+        <img src="https://i.pinimg.com/736x/ef/5d/c5/ef5dc54ca08475e7b9bc8926559a0e56.jpg" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fnatural%2520scenery%2F&psig=AOvVaw0us-deei7wpIdSvlpHBo0Z&ust=1740578254853000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCPw7n93osDFQAAAAAdAAAAABAE">
+        <img src="https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fsherrrysthetic%2F&psig=AOvVaw3K5qaEevIK4DVPi0vXcB4v&ust=1740577907702000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiQ-Jj83osDFQAAAAAdAAAAABAP">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQnxluNFKjOq4C868la1M-6YP2I-QI3FwyAw&s" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FKrishna-krishna-Posters-Stickers-Decoration%2Fdp%2FB0DD8LJ88W&psig=AOvVaw0HiyVzVboywrAvgveVkdhh&ust=1740578073892000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCW7eP83osDFQAAAAAdAAAAABAW">
+        <img src="https://m.media-amazon.com/images/I/81vLiRbuFzL._AC_UF1000,1000_QL80_.jpg" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shihoriobata.com%2Fblog%2Fpositive-short-quotes%2F&psig=AOvVaw2AwogDxstBNKIlIJPVJKVG&ust=1740578317493000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNixptj93osDFQAAAAAdAAAAABAP">
+        <img src="https://www.shihoriobata.com/wp-content/uploads/2020/07/the-best-is-yet-to-come-878x1024.jpg" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.countryliving.com%2Flife%2Fg5054%2Fquotes-about-strength%2F&psig=AOvVaw1Fo67sH3dBBoLtGtOw6mNN&ust=1740578428993000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiF_oz-3osDFQAAAAAdAAAAABAE">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/strength-quotes-calm-mind-1551211388.jpg" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.guillenphoto.com%2Fen%2F21-essential-tips-to-improve-your-photos-and-make-them-interesting.html&psig=AOvVaw2bkzV6eRTjltiaA-0qj1-g&ust=1740577903745000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCRg9b_3osDFQAAAAAdAAAAABAQ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIlv_FjGMKI5709K_qgGgTlOV-qLFaIVvBnA&s" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shopify.com%2Fstock-photos&psig=AOvVaw2bkzV6eRTjltiaA-0qj1-g&ust=1740577903745000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCRg9b_3osDFQAAAAAdAAAAABAE">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSWo8UA5AM-0F_JPwbXEc5KBrHnBSFE8YvCg&s" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Faesthetic-nature&psig=AOvVaw3K5qaEevIK4DVPi0vXcB4v&ust=1740577907702000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiQ-Jj83osDFQAAAAAdAAAAABAI">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/715/778/non_2x/sunset-meadow-wildflowers-bloom-in-nature-beauty-generated-by-ai-free-photo.jpg" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fphotos%2Fnature-waters-lake-island-3082832%2F&psig=AOvVaw0BeR4GKVD6lgO5bqUYhvrJ&ust=1740577680057000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCznKf73osDFQAAAAAdAAAAABAE">
+        <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg" alt="" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fotor.com%2Fblog%2Fhow-to-take-professional-photos%2F&psig=AOvVaw1Q8I2rWfvIIs2v9pjwy6wC&ust=1740577456454000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDZw_r63osDFQAAAAAdAAAAABAJ">
+        <img src="https://imgv3.fotor.com/images/blog-cover-image/a-shadow-of-a-boy-carrying-the-camera-with-red-sky-behind.jpg" >
+    </a>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Faesthetic-nature&psig=AOvVaw3K5qaEevIK4DVPi0vXcB4v&ust=1740577907702000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiQ-Jj83osDFQAAAAAdAAAAABAI">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/715/778/non_2x/sunset-meadow-wildflowers-bloom-in-nature-beauty-generated-by-ai-free-photo.jpg" alt="" >
+    </a>
+</div>
+</body>
+</html>
